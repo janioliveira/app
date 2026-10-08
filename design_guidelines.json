@@ -1,0 +1,234 @@
+{
+  "theme": "light_with_dark_toggle",
+  "locale": {
+    "language": "pt-BR",
+    "currency": "BRL",
+    "currency_symbol": "R$",
+    "date_format": "dd/MM/yyyy",
+    "datetime_format": "dd/MM/yyyy HH:mm",
+    "first_day_of_week": 0,
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    }
+  },
+  "typography": {
+    "font_import": "@fontsource-variable/plus-jakarta-sans",
+    "heading_family": "'Plus Jakarta Sans Variable', sans-serif",
+    "body_family": "'Plus Jakarta Sans Variable', sans-serif",
+    "scale_px": {
+      "display": 56,
+      "h1": 40,
+      "h2": 30,
+      "h3": 22,
+      "h4": 18,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headings": "font-bold tracking-tight text-slate-900 dark:text-slate-50",
+      "body": "font-normal leading-relaxed text-slate-700 dark:text-slate-300",
+      "labels": "text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+    }
+  },
+  "colors": {
+    "palette_archetype": "ARCHETYPE 6: VIBRANT PLAY & RELIABLE ERP (Sunlit Coral + Azure Sky + Deep Slate)",
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "link": "#0284C7",
+          "error": "#DC2626",
+          "success": "#16A34A",
+          "warning": "#D97706"
+        }
+      },
+      {
+        "name": "page_dark",
+        "kind": "solid",
+        "bg": "#0B1120",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#F87171",
+          "success": "#4ADE80",
+          "warning": "#FBBF24"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569"
+      },
+      {
+        "name": "panel_dark",
+        "kind": "solid",
+        "bg": "#1E293B",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#CBD5E1"
+      },
+      {
+        "name": "pix_card_surface",
+        "kind": "solid",
+        "bg": "#F0FDF4",
+        "on_bg": "#14532D",
+        "on_bg_muted": "#166534",
+        "roles": {
+          "accent_pix": "#00A868"
+        }
+      },
+      {
+        "name": "hero",
+        "kind": "gradient",
+        "contrast_against": "#FFFFFF",
+        "guarantee": "scrim: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(240,249,255,0.85) 100%)",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#334155",
+        "roles": {
+          "link": "#0284C7",
+          "highlight": "#EA580C"
+        }
+      }
+    ],
+    "accent": "#EA580C",
+    "on_accent": "#FFFFFF",
+    "brand": {
+      "primary": "#EA580C",
+      "primary_hover": "#C2410C",
+      "secondary": "#0284C7",
+      "secondary_hover": "#0369A1",
+      "pix_emerald": "#00A868",
+      "pix_emerald_dark": "#047857",
+      "badge_warning": "#F59E0B",
+      "badge_danger": "#EF4444",
+      "badge_info": "#3B82F6"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split hero — brand identity & quick reservation left with instant availability check, catalog highlight showcase & active equipment cards right",
+    "/login": "branded split auth — Lany Infláveis festive background & positioning panel left, secure login form with role switcher right",
+    "/register": "branded split auth — positioning panel with customer benefits left, registration form (CPF, WhatsApp, Address) right",
+    "/admin": "high-density ERP dashboard — key performance metrics grid top, real-time dispatch and bookings calendar center, PIX financial overview bottom",
+    "/checkout/:id": "crystal PIX transaction panel — countdown timer, QR code graphic, instant copia-e-cola string, and real-time webhook status badge"
+  },
+  "grids": {
+    "dashboard_mode": "MODE B: High Density Grid (col-span-1 for summary KPIs, col-span-2 or 3 for booking timeline, col-span-1 for quick actions and equipment status)",
+    "catalog_mode": "Responsive Tetris Grid (1 col mobile, 2 col tablet, 3-4 col desktop) with high-impact product cards, dimension badges, age group chips, and instant rent buttons",
+    "spacing_scale": "p-4 sm:p-6 lg:p-8 with gap-4 md:gap-6 for dashboard widgets; gap-8 for public storefront"
+  },
+  "visual_enhancers": {
+    "card_style": "Solid white or slate-800 with 1px border (border-slate-200 dark:border-slate-700/60), nested radius rounded-2xl, soft ambient shadow (shadow-sm hover:shadow-md transition-shadow)",
+    "glassmorphism": "Used selectively for sticky top navigation bar (backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-slate-800)",
+    "pix_badge": "Vibrant emerald green badge with pulse animation when payment is pending, solid green checkmark upon Mercado Pago webhook confirmation",
+    "contract_signature_pad": "Clean digital signature box with canvas drawing + one-click digital certificate timestamp and terms acceptance checkbox",
+    "empty_states": "Playful and descriptive Brazilian Portuguese copy with contextual action buttons ('Nenhuma reserva encontrada - Criar Novo Agendamento')"
+  },
+  "motion": {
+    "transitions": "transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease",
+    "enter_animation": "framer-motion staggered fade-in + slide-up for lists and metric cards",
+    "modal_animation": "scale-up from 95% to 100% with backdrop opacity fade",
+    "accessibility_reduced_motion": "Wrap animations with prefers-reduced-motion media query checks or fallback to instantaneous visibility"
+  },
+  "accessibility": {
+    "wcag_target": "WCAG AA (4.5:1 for normal text, 3:1 for large display headers and buttons)",
+    "data_testids": "MANDATORY on all buttons, links, inputs, selects, tabs, status badges, and metric cards (e.g. data-testid='pix-copy-button', data-testid='btn-create-booking', data-testid='input-customer-cpf')",
+    "keyboard_navigation": "Visible ring-2 ring-primary ring-offset-2 on all interactive focus targets"
+  },
+  "image_urls": [
+    {
+      "category": "hero_catalog_inflatables",
+      "url": "https://images.unsplash.com/photo-1770144018298-9a39b149b372?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxib3VuY3klMjBjYXN0bGUlMjBpbmZsYXRhYmxlfGVufDB8fHx8MTc5MTQyNTgxOXww&ixlib=rb-4.1.0&q=85",
+      "description": "Tobogã inflável e circuito infantil colorido para eventos e festas",
+      "use_location": "Catálogo de Brinquedos - Tobogã Gigante e Hero Banner"
+    },
+    {
+      "category": "hero_catalog_inflatables",
+      "url": "https://images.unsplash.com/photo-1765947389633-461a4af7712b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxib3VuY3klMjBjYXN0bGUlMjBpbmZsYXRhYmxlfGVufDB8fHx8MTc5MTQyNTgxOXww&ixlib=rb-4.1.0&q=85",
+      "description": "Castelinho Pula-Pula Inflável montado em área externa / parque",
+      "use_location": "Catálogo de Brinquedos - Castelinho Encantado / Pula-Pula"
+    },
+    {
+      "category": "hero_catalog_inflatables",
+      "url": "https://images.unsplash.com/photo-1740033135773-bf7c886ae45a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxib3VuY3klMjBjYXN0bGUlMjBpbmZsYXRhYmxlfGVufDB8fHx8MTc5MTQyNTgxOXww&ixlib=rb-4.1.0&q=85",
+      "description": "Criança pulando no brinquedo inflável / cama elástica",
+      "use_location": "Catálogo de Brinquedos - Cama Elástica 3.05m e Futebol de Sabão"
+    },
+    {
+      "category": "party_atmosphere",
+      "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxraWRzJTIwYmlydGhkYXklMjBwYXJ0eXxlbnwwfHx8fDE3OTE0MjU4MTl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Balões coloridos e decoração festiva para aniversário infantil",
+      "use_location": "Página Inicial Hero Background e Login Portal"
+    },
+    {
+      "category": "party_atmosphere",
+      "url": "https://images.unsplash.com/photo-1531956531700-dc0ee0f1f9a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxraWRzJTIwYmlydGhkYXklMjBwYXJ0eXxlbnwwfHx8fDE3OTE0MjU4MTl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Decoração de mesa de festa infantil com chapéus de festa e confetes",
+      "use_location": "Banner de Pacotes e Festas Completas"
+    }
+  ],
+  "component_structure": {
+    "app_shell": "frontend/src/App.tsx with Role-Based Layouts (AdminLayout, CustomerLayout, PublicLayout)",
+    "pages": [
+      {"path": "/", "file": "frontend/src/pages/Home.tsx", "title": "Início & Catálogo Público"},
+      {"path": "/brinquedos", "file": "frontend/src/pages/Catalog.tsx", "title": "Catálogo & Verificação de Disponibilidade"},
+      {"path": "/reservar", "file": "frontend/src/pages/BookingFlow.tsx", "title": "Fluxo Completo de Reserva & Pré-reserva"},
+      {"path": "/pagamento/:id", "file": "frontend/src/pages/PixCheckout.tsx", "title": "Pagamento PIX Mercado Pago & QR Code"},
+      {"path": "/contrato/:id", "file": "frontend/src/pages/ContractSign.tsx", "title": "Visualização e Assinatura Digital de Contrato"},
+      {"path": "/login", "file": "frontend/src/pages/Login.tsx", "title": "Entrar no Sistema / Portal"},
+      {"path": "/cadastro", "file": "frontend/src/pages/Register.tsx", "title": "Cadastro de Cliente"},
+      {"path": "/cliente", "file": "frontend/src/pages/customer/Portal.tsx", "title": "Portal do Cliente (Minhas Reservas, Contratos, PIX)"},
+      {"path": "/admin", "file": "frontend/src/pages/admin/Dashboard.tsx", "title": "Dashboard Gerencial & KPIs"},
+      {"path": "/admin/reservas", "file": "frontend/src/pages/admin/Bookings.tsx", "title": "Gestão de Reservas & Ciclo de Vida"},
+      {"path": "/admin/agenda", "file": "frontend/src/pages/admin/Schedule.tsx", "title": "Agenda & Calendário de Disponibilidade"},
+      {"path": "/admin/orcamentos", "file": "frontend/src/pages/admin/Budgets.tsx", "title": "Emissão de Orçamentos & Conversão"},
+      {"path": "/admin/brinquedos", "file": "frontend/src/pages/admin/Inventory.tsx", "title": "Cadastro de Brinquedos, Dimensões e Manutenção"},
+      {"path": "/admin/clientes", "file": "frontend/src/pages/admin/Customers.tsx", "title": "Gestão e Histórico de Clientes"},
+      {"path": "/admin/financeiro", "file": "frontend/src/pages/admin/Financial.tsx", "title": "Controle Financeiro (PIX, Despesas, Lucro Líquido)"},
+      {"path": "/admin/contratos", "file": "frontend/src/pages/admin/Contracts.tsx", "title": "Modelos e Gestão de Contratos"},
+      {"path": "/admin/whatsapp", "file": "frontend/src/pages/admin/WhatsAppLogs.tsx", "title": "Mensagens WhatsApp & Templates"},
+      {"path": "/admin/relatorios", "file": "frontend/src/pages/admin/Reports.tsx", "title": "Relatórios com Exportação (CSV/PDF)"},
+      {"path": "/admin/configuracoes", "file": "frontend/src/pages/admin/Settings.tsx", "title": "Configurações da Empresa, Mercado Pago e Usuários"},
+      {"path": "/admin/auditoria", "file": "frontend/src/pages/admin/AuditLogs.tsx", "title": "Trilha de Auditoria do Sistema"}
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Adotar pt-BR estritamente em toda a interface: moedas formatadas em 'R$ 1.250,00', datas 'DD/MM/AAAA' e horários em formato 24h.",
+    "2. Identidade visual da Lany Infláveis: vibrante, alegre e acolhedora para festas infantis, porém sóbria e altamente profissional no painel administrativo.",
+    "3. Fluxo de pagamento PIX exclusivo: simulação realista integrada com Mercado Pago (geração de QR Code Base64/SVG, código copia-e-cola com feedback de cópia, polling/webhook em tempo real para confirmação automática de reserva).",
+    "4. Sistema de conflito de agenda inteligente: impedir dupla reserva do mesmo brinquedo no mesmo dia/faixa de horário.",
+    "5. Geração automática de contrato com cláusulas padrão brasileiras de locação de brinquedos (responsabilidade, cuidados elétricos, cancelamento) e área para aceite/assinatura digital do cliente.",
+    "6. Integração e log de mensagens WhatsApp (notificação de pré-reserva, envio de chave PIX, confirmação de pagamento e link de assinatura do contrato) com botão de envio rápido via link wa.me.",
+    "7. Controle de permissões RBAC robusto: Administrador (acesso total), Funcionário (agenda, reservas, brinquedos, entregas) e Cliente (portal isolado).",
+    "8. Todos os elementos interativos DEVEM conter data-testid descritivos.",
+    "9. Suporte nativo ao modo escuro (dark mode toggle) respeitando o design system."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "do_not": [
+      "DO NOT use emojis as system UI icons (use Lucide icons like Calendar, DollarSign, Shield, CheckCircle, Package, Users, Truck, Clock).",
+      "DO NOT use generic unformatted numbers for currency (always use Intl.NumberFormat pt-BR).",
+      "DO NOT center-align the main app layout text globally.",
+      "DO NOT apply transition: all globally.",
+      "DO NOT use pure black #000000 or harsh pure gray #808080."
+    ],
+    "do": [
+      "Use generous spacing (p-6, p-8, p-12) for dashboard panels.",
+      "Ensure all buttons have responsive touch targets and active state feedback.",
+      "Provide instant toast notifications via Sonner for actions (reserva criada, pix copiado, contrato assinado, status atualizado).",
+      "Pre-seed realistic data for Lany Infláveis (Pula-Pula Castelo 3x3m, Tobogã Inflável 5m, Cama Elástica 3.05m, Futebol de Sabão 8x4m, Piscina de Bolinhas, Pipoca & Algodão Doce)."
+    ]
+  }
+}

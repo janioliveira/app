@@ -1,0 +1,44 @@
+# Ambiente e segredos — NUNCA versionar
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+backend/.env
+frontend/.env
+*.pem
+*-service-account*.json
+firebase-adminsdk*.json
+
+# IDE e editores
+.idea/
+.vscode/
+
+# Dependências
+node_modules/
+.venv/
+venv/
+
+# Build
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+.vercel
+coverage/
+test_reports/
+.screenshots/
